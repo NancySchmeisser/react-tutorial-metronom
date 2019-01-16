@@ -7,7 +7,15 @@ class Metronome extends Component {
         let playing = false;
 
 
-        return <div className="metronome">hi hi</div>;
+        return (
+        <div className="metronome">
+        <div className="bmp-slider">
+        <div>{bpm} BPM</div>
+        <input type="range" min="60" max="240" value={bpm} />
+        </div>
+        <button>{playing ? 'Stop' : 'Start'}</button>
+        </div>
+        );
     }
 }
 export default Metronome;
