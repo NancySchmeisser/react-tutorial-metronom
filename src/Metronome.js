@@ -3,7 +3,11 @@ import './Metronome.css';
 
 class Metronome extends Component {
     render() {
-        return <div className="metronome">hi</div>;
+        let bpm = 100;
+        let playing = false;
+
+
+        return <div className="metronome">hi hi</div>;
     }
 }
 export default Metronome;
